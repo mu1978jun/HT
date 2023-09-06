@@ -2,7 +2,7 @@
 "token":"342a28053dd54cf2b0246c6b33c74013",
 "open_token":"280bytestoken",
 "thread_limit":32,
-"vod_flags":"auto|4k|4kz|",
+"vod_flags":"auto|4k|4kz",
 "quark_flags":"auto",
 "open_api_url":"https://api.xhofe.top/alist/ali_open/",
 "quark_cookie":"
