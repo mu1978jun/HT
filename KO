@@ -125,7 +125,7 @@
 {"key":"drpy_js_愛盤搜","name":"影视爱盘搜[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/aipanso.js", "quickSearch":1, "changeable":1, "timeout":30},
 {"key":"drpy_js_趣盤搜","name":"影视趣盘搜[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/funletu.js", "quickSearch":1, "changeable":1, "timeout":30},
 {"key":"drpy_js_校长影视","name":"校长影视[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/xzys.js", "quickSearch":1, "changeable":1, "timeout":30},
-{"key":"push_agent","name":"夸克推送","type":3,"api":"csp_Push","searchable":0,"quickSearch":0,"changeable":0,"filterable":0,"ext":"https://ghproxy.liuzhicong.com/https://raw.githubusercontent.com/mu1978jun/KS/main/CC/open_token.json"},
+{"key":"push_agent","name":"夸克推送","type":3,"api":"csp_Push","searchable":0,"quickSearch":0,"changeable":0,"filterable":0,"ext":"./open_token.json"},
 {"key":"drpy_js_6V新版[磁]","name":"🚷磁力6V🚷","type":3,"api":"https://ghproxy.liuzhicong.com/https://raw.githubusercontent.com/mu1978jun/HT/master/lib/drpy2.min.js","searchable":1,"quickSearch":1,"changeable":0,"ext":"https://ghproxy.liuzhicong.com/https://raw.githubusercontent.com/mu1978jun/HT/master/js/6V新版[磁].js"},
 {"key":"csp_DiDuan","name":"📺低端","type":3,"api":"csp_Ddrk","searchable":1,"quickSearch":1,"filterable":0},
 
