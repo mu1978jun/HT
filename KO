@@ -1,8 +1,8 @@
 ﻿﻿{
   
 
-  
-   "spider": "https://ghproxy.liuzhicong.com/https://raw.githubusercontent.com/mu1978jun/KS/main/YY/Yoursmile.jar;md5;C2D9520823FD503539E2BD0522771DCA",
+   "spider": "https://ghproxy.liuzhicong.com/https://raw.githubusercontent.com/mu1978jun/KS/main/YY/fan.txt;md5;8a3584c3608a5412fb02a769ab3886bb",
+   //"spider": "https://ghproxy.liuzhicong.com/https://raw.githubusercontent.com/mu1978jun/KS/main/YY/Yoursmile.jar;md5;C2D9520823FD503539E2BD0522771DCA",
    //"spider": "https://ghproxy.liuzhicong.com/https://raw.githubusercontent.com/mu1978jun/KS/main/YY/uyv0t678c488189af47bb91dc108484d17431.jar;md5;91b04592e14b3cc30f34c1324a59e8ad",
    //"spider":"https://ghproxy.liuzhicong.com/https://raw.githubusercontent.com/mu1978jun/KS/main/YY/fm.jar;md5;7a56a679fe7c45dda5a2ed7b820406f8",
    //"spider":"https://ghproxy.liuzhicong.com/https://raw.githubusercontent.com/mu1978jun/KS/main/YY/fm.jar;md5;60aa3afc63b564d66450b23272cf22ce",
@@ -18,7 +18,7 @@
  
   "sites":[
 
-
+{"key":"csp_WoGG","name":"😼玩偶(pg)┃4K","type":3,"api":"csp_Wogg","searchable":1,"quickSearch":1,"changeable":1,"ext":"http://192.168.0.2:5678/tvbox//tokenem.json$$$https://wogg.xyz","timeout":30,"jar":"https://ghproxy.liuzhicong.com/https://raw.githubusercontent.com/mu1978jun/KS/main/YY/pg.jar;md5;74657742AA46C4E4464281A5E652AF03"},
 {"key":"csp_77","name":"👒酷云七七","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"playerType":2,"filterable":1},
 {"key": "csp_Bili","name": "🅱哔哔哩哔哩","type": 3,"api": "csp_Bili","searchable": 1,"quickSearch": 0,"changeable": 0,"ext": "https://ghproxy.liuzhicong.com/https://raw.githubusercontent.com/mu1978jun/KS/main/CC/bilibili.json"},
 //{"key": "js_B站精简","name": "🅱哔哩精简","type": 3,"api": "https://ghproxy.liuzhicong.com/https://raw.githubusercontent.com/mu1978jun/KS/main/CC/lib/drpy2.min.js","searchable": 0,"quickSearch": 0,"filterable": 1,"ext": "https://ghproxy.liuzhicong.com/https://raw.githubusercontent.com/mu1978jun/KS/main/CC/B站精简.js"},
