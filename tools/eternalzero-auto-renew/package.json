@@ -1,0 +1,17 @@
+{
+  "name": "eternalzero-auto-renew",
+  "version": "0.1.0",
+  "description": "Automation script to renew EternalZero panel servers.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node renew.mjs",
+    "playwright:install": "npx playwright install --with-deps"
+  },
+  "dependencies": {
+    "playwright": "^1.46.0"
+  }
+}

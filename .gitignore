@@ -1,0 +1,29 @@
+# Node & Playwright tooling
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+pnpm-lock.yaml
+
+# Playwright outputs
+playwright-report/
+test-results/
+videos/
+traces/
+
+# Tool-specific artifacts
+/tools/eternalzero-auto-renew/artifacts/
+/tools/eternalzero-auto-renew/node_modules/
+/tools/eternalzero-auto-renew/package-lock.json
+/tools/eternalzero-auto-renew/playwright-report/
+/tools/eternalzero-auto-renew/test-results/
+/tools/eternalzero-auto-renew/videos/
+/tools/eternalzero-auto-renew/traces/
+
+# Environment files
+.env
+*.local
+
+# Logs
+*.log

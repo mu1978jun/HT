@@ -1,0 +1,56 @@
+name: EternalZero Auto Renew
+
+on:
+  schedule:
+    - cron: '0,30 * * * *'
+      timezone: 'Asia/Shanghai'
+  workflow_dispatch:
+
+jobs:
+  auto-renew:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    defaults:
+      run:
+        working-directory: tools/eternalzero-auto-renew
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright browsers
+        run: npm run playwright:install
+
+      - name: Run EternalZero renew bot
+        env:
+          E0_BASE_URL: ${{ secrets.E0_BASE_URL }}
+          E0_SERVER_PATH: ${{ secrets.E0_SERVER_PATH }}
+          E0_SERVER_NAME: ${{ secrets.E0_SERVER_NAME }}
+          E0_LOGIN_EMAIL: ${{ secrets.E0_LOGIN_EMAIL }}
+          E0_LOGIN_PASSWORD: ${{ secrets.E0_LOGIN_PASSWORD }}
+          E0_COOKIE_JSON: ${{ secrets.E0_COOKIE_JSON }}
+          E0_MAX_RENEWS_PER_DAY: ${{ secrets.E0_MAX_RENEWS_PER_DAY }}
+          E0_COOLDOWN_MINUTES: ${{ secrets.E0_COOLDOWN_MINUTES }}
+          E0_RENEW_THRESHOLD_HOURS: ${{ secrets.E0_RENEW_THRESHOLD_HOURS }}
+          E0_HEADLESS: ${{ secrets.E0_HEADLESS }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+        run: npm start
+
+      - name: Upload failure artifacts
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eternalzero-auto-renew-artifacts
+          path: tools/eternalzero-auto-renew/artifacts
+          if-no-files-found: ignore
+          include-hidden-files: true
